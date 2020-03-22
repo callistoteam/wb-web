@@ -6,9 +6,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "chart.js": "^2.9.3",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
     "react": "^16.12.0",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "stringify": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "stringify": {
+    "appliesTo": {
+      "includeExtensions": [
+        ".html"
+      ]
+    },
+    "minify": true
   }
 }

@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  StaticRouter,
+  BrowserRouter as Router,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
-function App() {
+import Navbar from './components/NavBar'
+import Footer from './components/Footer'
+import Redirecting from './components/Redirecting'
+
+
+import Home from './pages/Home'
+import Stock from './pages/Stock'
+import OnDev from './pages/OnDevelop'
+import Invite from './pages/Invite'
+import Ezinvite from './pages/EzInvite'
+import InviteSuccess from './pages/InviteSuccess'
+import NotFound from './pages/404'
+
+
+export default function App(history) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Navbar/>
+        <div className='pageContent ui container'>
+        <Switch>
+          <Router exact path='/'>
+            <Home />
+          </Router>
+          <Router path='/stocks'>
+              <Stock/>
+          </Router>
+          <Router path='/dash'>
+            <OnDev/>
+          </Router>
+          <Router path='/discord'>
+            <Redirecting to='https://invite.gg/wonderbot'/>
+          </Router>
+          <Router path='/tos'>
+            <Redirecting to='https://callisto.team/tos'/>
+          </Router>
+          <Router exact path={['/invite', '/invite/custom']}>
+            <Invite/>
+          </Router>
+          <Router path='/invite/ez'>
+            <Ezinvite/>
+          </Router>
+          <Router path='/invite/success*'>
+            <InviteSuccess/>
+          </Router>
+          {/*404*/}
+          <NotFound/> 
+        </Switch>
+        </div>
+        <Footer />
+    </Router>
   );
 }
-
-export default App;
