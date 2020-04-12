@@ -7,7 +7,7 @@ const Shards = () => {
     const [ Info, setInfo] = useState([])
     const [ Loading, setLoading ] = useState(true)
     useEffect(() => {
-        fetch('http://localhost:4000' + '/shards').then(r=> r.json()).then(data=> {
+        fetch(config.api + '/shards').then(r=> r.json()).then(data=> {
             console.log(data)
             setInfo(data)
             
