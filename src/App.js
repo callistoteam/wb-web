@@ -18,7 +18,7 @@ import Invite from './pages/Invite'
 import Ezinvite from './pages/EzInvite'
 import InviteSuccess from './pages/InviteSuccess'
 import NotFound from './pages/404'
-
+import Shards from './pages/Shards'
 
 export default function App(history) {
   return (
@@ -46,6 +46,9 @@ export default function App(history) {
           </Router>
           <Router path='/invite/ez'>
             <Ezinvite/>
+          </Router>
+          <Router path='/shards'>
+            <Shards/>
           </Router>
           <Router path='/invite/success*'>
             <InviteSuccess/>
