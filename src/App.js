@@ -20,11 +20,11 @@ import InviteSuccess from './pages/InviteSuccess'
 import NotFound from './pages/404'
 import Shards from './pages/Shards'
 
-export default function App(history) {
+export default function App() {
   return (
     <Router>
         <Navbar/>
-        <div className='pageContent ui container'>
+        <div style={{position: "relative"}}>
         <Switch>
           <Router exact path='/'>
             <Home />
@@ -56,6 +56,7 @@ export default function App(history) {
           {/*404*/}
           <NotFound/> 
         </Switch>
+
         </div>
         <Footer />
     </Router>

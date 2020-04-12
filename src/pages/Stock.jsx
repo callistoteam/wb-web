@@ -6,6 +6,7 @@ import config from '../config'
 import Graph from '../components/Graph'
 
 const GraphPage = props => {
+    document.title = `원더봇 | 아이템 가격 그래프`
     const [isLoading, setLoading] = useState(true)
     const [isPoped, setPop] = useState(true)
     const [stockData, setStockData] = useState('')

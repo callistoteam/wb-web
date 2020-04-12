@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = props => {
     return(
-        <div class="ui inverted center aligned vertical footer segment">
-        <div class="ui center aligned container">
+      <div>
+        <div class="ui inverted center aligned vertical footer segment" style={{position: 'absolute', bottom: 0, left: 0, width: '100%'}}>
           <div class="ui stackable grid">
             <div class="six wide left floared inverted column">
               <h4 class="ui inverted header">원더봇</h4>
@@ -34,9 +34,9 @@ const Footer = props => {
           
 
           <div class="ui horizontal small divided link list inverted">
-            <a class="item">© 2017<script>new Date().getFullYear()>2017&&document.write("~"+new Date().getFullYear());</script>~2020 팀 칼리스토. 모든 권리 보유<br/><br/>© 2017<script>new Date().getFullYear()>2017&&document.write("~"+new Date().getFullYear());</script>~2020 Team. Callisto. All rights reserved</a>
+            <a class="item">© 2017~2020 팀 칼리스토. 모든 권리 보유<br/><br/>© 2017~2020 Team. Callisto. All rights reserved</a>
           </div>
-        </div>
+      </div>
       </div>
     )
 }

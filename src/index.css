@@ -24,10 +24,7 @@ nav {
   text-align: center;
 }
 
-.footer {
-  bottom: 0;
-  width: 100%;
-}
+
 
 .content  {
   color: white !important;
@@ -35,13 +32,13 @@ nav {
 
 @media only screen and (max-device-width: 480px) {
   .footer{
-    position: static !important;
+    position: relative !important;
   }
 }
 
 @media ( min-device-width: 481px ) {
   .footer {
-    position: relative;
+    position: absolute !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -53,3 +50,4 @@ nav {
 .pageContent {
   height: 70vh;
 }
+

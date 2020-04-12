@@ -3,10 +3,11 @@ import fetch from 'node-fetch'
 import config from '../config'
 
 const Shards = () => {
+    document.title = `원더봇 | 샤드 정보`
     const [ Info, setInfo] = useState([])
     const [ Loading, setLoading ] = useState(true)
     useEffect(() => {
-        fetch(config.api + '/shards').then(r=> r.json()).then(data=> {
+        fetch('http://localhost:4000' + '/shards').then(r=> r.json()).then(data=> {
             console.log(data)
             setInfo(data)
             

@@ -1,8 +1,7 @@
 import React from 'react'
-import {useHistory} from 'react-router-dom'
 
 const EzInvite = () => {
-    const history = useHistory()
+    document.title = `원더봇 | 쉬운초대`
 
     return(
         <div className="ui inverted center aligned container">

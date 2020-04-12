@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Invite = props => {
+    document.title = `원더봇 | 초대하기`
     return (
         <div className="ui inverted center aligned container">
             <h1 className='ui inverted header'>원더봇을 선택해주셔서 감사합니다!</h1>
