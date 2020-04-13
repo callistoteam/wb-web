@@ -24,7 +24,7 @@ export default function App() {
   return (
     <Router>
         <Navbar/>
-        <div style={{position: "relative"}}>
+        <div className="ui container" style={{position: "relative"}}>
         <Switch>
           <Router exact path='/'>
             <Home />
