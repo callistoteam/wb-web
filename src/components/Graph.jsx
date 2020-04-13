@@ -1,16 +1,12 @@
-import React from "react"
-import { Line } from 'react-chartjs-2';
+import React from "react";
+import { Line } from "react-chartjs-2";
 
 const Graph = props => {
-    return (
-        <div>
-            <Line data={props.data}/>ㅎ
+  return (
+    <div>
+      <Line data={props.data} />ㅎ
+    </div>
+  );
+};
 
-            
-        </div>
-    )
-}
-
-
-export default Graph
-
+export default Graph;
