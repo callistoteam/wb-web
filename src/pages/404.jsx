@@ -11,7 +11,7 @@ const NotFound = () => {
   const back = () => history.goBack();
   return (
     <div className="ui center aligned container">
-      <h1 style={{ fontSize: "10em", color: EE >= 3 ? "red" : "white" }} className="ui inverted header" onClick={Up}>
+      <h1 style={{ fontSize: "10em", color: EE >= 3 ? "red" : "white" }} className="ui inverted experiment-title header" onClick={Up}>
         {
           EE >= 3 ? '444' : '404'
         }
