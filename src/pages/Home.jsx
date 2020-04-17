@@ -12,7 +12,7 @@ const Home = props => {
         간편하고 재미있는 삶을 살아요.
       </p>
       <br />
-      <div className="ui inverted center aligned stackable container" style={{paddingBottom: '100px'}}>
+      <div className="ui inverted center aligned stackable container" style={{paddingBottom: '400px'}}>
         <a
           className="ui long dash button"
           href="/dash"
@@ -24,13 +24,26 @@ const Home = props => {
         <a
           className="ui long dash button"
           href="/invite/custom"
-          style={{ color: "white", background: "#7289DA", margin: "40px" }}
+          style={{ color: "white", background: "#7289DA" }}
         >
           <i className="icon discord"></i> 자신 서버로 초대하기
         </a>
       </div>
       <div className="ui divider"/>
-      <div className="ui stackable grid" style={{paddingTop: '15vh'}}>
+      <div className="ui stackable grid" >
+      <div className="nine wide column">
+        <h1 className="ui inverted header">서버를 깨끗하게.</h1>
+        <div className="desc">밴, 킥 기능은 물론이고 경고 기능도 존재합니다.<br/>경고 한도 이상의 경고가 누적되면 자동 밴처리됩니다.<br/>서버를 깔끔하게 관리하세요.</div>
+      </div>
+        <div className="seven wide column">      
+        <img className="ui image" alt="Warn" src="/images/warn.png" /> 
+      </div>
+      
+      </div>
+      <br/>
+      <div className="ui divider"/>
+      <br/>
+      <div className="ui stackable grid">
         <div className="ten wide column">      
         <img className="ui image" alt="Slot" src="/images/slot.gif" /> 
       </div>
@@ -60,7 +73,7 @@ const Home = props => {
         <img className="ui image" alt="delivery" src="/images/delivery.png" /> 
       </div>
       <div className="six wide column">
-        <h1 className="ui inverted header">유용함과 편리함.</h1>
+        <h1 className="ui inverted header">유용하지만 편리함.</h1>
         <div className="desc">택배 명령어뿐만 아니라 환율 기능과 원소기호 등 유용한 기능을 디스코드에서 만나보세요</div>
       </div>
       </div>
