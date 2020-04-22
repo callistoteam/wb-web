@@ -91,13 +91,12 @@ const Shards = () => {
         </div>
       </div>{" "}
       <br/>
-      <AdSense.Google
-        style={{ display: 'block' }}
-        client='ca-pub-4856582423981759'
-        slot='4402011066'
-        format='auto'
-        responsive='true'
-      />
+      <ins className="adsbygoogle"
+     style={{ display: 'block'}}
+     data-ad-client="ca-pub-4856582423981759"
+     data-ad-slot="4402011066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
     </div>
   );
 };
