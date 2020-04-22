@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import AdSense from 'react-adsense';
 
 const Invite = props => {
-
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  
   document.title = `원더봇 | 초대하기`;
+
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, [])
   return (
     <div className="ui inverted center aligned container">
       <h1 className="ui inverted header">원더봇을 선택해주셔서 감사합니다!</h1>
