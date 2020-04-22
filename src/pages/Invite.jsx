@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from 'react-adsense';
 
 const Invite = props => {
 
