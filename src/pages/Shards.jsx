@@ -9,6 +9,8 @@ const Shards = () => {
   const [Info, setInfo] = useState([]);
   const [Loading, setLoading] = useState(true);
   useEffect(() => {
+    window.adsbygoogle = window.adsbygoogle || []
+    window.adsbygoogle.push({})
     fetch(config.api + "/shards")
       .then(r => r.json())
       .then(data => {
@@ -91,12 +93,14 @@ const Shards = () => {
         </div>
       </div>{" "}
       <br/>
+      <div align="center">
       <ins className="adsbygoogle"
      style={{ display: 'block'}}
      data-ad-client="ca-pub-4856582423981759"
      data-ad-slot="4402011066"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
+      </div>
     </div>
   );
 };
