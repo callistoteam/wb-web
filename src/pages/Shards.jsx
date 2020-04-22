@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import fetch from "node-fetch";
+import AdSense from 'react-adsense';
+
 import config from "../config";
 
 const Shards = () => {
@@ -88,6 +90,14 @@ const Shards = () => {
           )}
         </div>
       </div>{" "}
+      <br/>
+      <AdSense.Google
+        style={{ display: 'block' }}
+        client='ca-pub-4856582423981759'
+        slot='4402011066'
+        format='auto'
+        responsive='true'
+      />
     </div>
   );
 };

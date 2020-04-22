@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Button, Confirm } from "semantic-ui-react";
+import { Confirm } from "semantic-ui-react";
+import AdSense from 'react-adsense';
 
 import fetch from "node-fetch";
 import config from "../config";
@@ -64,6 +65,13 @@ const GraphPage = props => {
         }}
       />
       <br />
+      <AdSense.Google
+        style={{ display: 'block' }}
+        client='ca-pub-4856582423981759'
+        slot='4402011066'
+        format='auto'
+        responsive='true'
+      />
     </div>
   );
 };
