@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Confirm } from "semantic-ui-react";
-import AdSense from 'react-adsense';
 
 import fetch from "node-fetch";
 import config from "../config";
@@ -17,8 +16,7 @@ const GraphPage = props => {
     localStorage.stock = true;
   };
   useEffect(() => {
-    window.adsbygoogle = window.adsbygoogle || []
-    window.adsbygoogle.push({})
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
     fetch(config.api + "/stocks/get")
       .then(r => r.json())
       .then(data => {

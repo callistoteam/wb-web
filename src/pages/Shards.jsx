@@ -9,8 +9,7 @@ const Shards = () => {
   const [Info, setInfo] = useState([]);
   const [Loading, setLoading] = useState(true);
   useEffect(() => {
-    window.adsbygoogle = window.adsbygoogle || []
-    window.adsbygoogle.push({})
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
     fetch(config.api + "/shards")
       .then(r => r.json())
       .then(data => {
