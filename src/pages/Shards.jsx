@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import fetch from "node-fetch";
+import AdSense from 'react-adsense';
 
 import config from "../config";
 
