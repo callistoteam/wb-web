@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AdSense from 'react-adsense';
 
 const EzInvite = () => {
   document.title = `원더봇 | 쉬운초대`;
+
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, [])
 
   return (
     <div className="ui inverted center aligned container">
