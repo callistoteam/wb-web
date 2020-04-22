@@ -22,6 +22,14 @@ const EzInvite = () => {
           <i className="icon discord"></i> 자신 서버로 초대하기
         </a>
       </div>{" "}
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br/>
+      <ins className="adsbygoogle"
+     style={{ display: 'block'}}
+     data-ad-client="ca-pub-4856582423981759"
+     data-ad-slot="4402011066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 };
