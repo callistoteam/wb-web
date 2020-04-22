@@ -1,6 +1,8 @@
 import React from "react";
 
 const Invite = props => {
+
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
   document.title = `원더봇 | 초대하기`;
   return (
     <div className="ui inverted center aligned container">
@@ -20,6 +22,13 @@ const Invite = props => {
       >
         <i className="icon discord"></i> 커스텀 초대하기
       </a>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <ins className="adsbygoogle"
+     style={{ display: 'block'}}
+     data-ad-client="ca-pub-4856582423981759"
+     data-ad-slot="4402011066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
     </div>
   );
 };

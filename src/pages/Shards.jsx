@@ -91,7 +91,7 @@ const Shards = () => {
           )}
         </div>
       </div>{" "}
-      <br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div align="center">
       <ins className="adsbygoogle"
      style={{ display: 'block'}}
@@ -100,6 +100,7 @@ const Shards = () => {
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
       </div>
+      <br/><br/>
     </div>
   );
 };
