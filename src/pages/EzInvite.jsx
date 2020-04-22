@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from 'react-adsense';
 
 const EzInvite = () => {
   document.title = `원더봇 | 쉬운초대`;
