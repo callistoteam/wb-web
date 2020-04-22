@@ -91,7 +91,7 @@ const Shards = () => {
           )}
         </div>
       </div>{" "}
-      <br/>
+      <br /><br /><br /><br /><br /><br /><br />
       <div align="center">
       <ins className="adsbygoogle"
      style={{ display: 'block'}}

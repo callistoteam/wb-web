@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Confirm } from "semantic-ui-react";
+import AdSense from 'react-adsense';
 
 import fetch from "node-fetch";
 import config from "../config";
@@ -66,6 +67,7 @@ const GraphPage = props => {
       />
       <br />
       <div align="center">
+      <br /><br /><br /><br /><br /><br /><br />
       <ins className="adsbygoogle"
      style={{ display: 'block'}}
      data-ad-client="ca-pub-4856582423981759"
