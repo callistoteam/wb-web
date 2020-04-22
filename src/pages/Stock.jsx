@@ -68,12 +68,12 @@ const GraphPage = props => {
       <br />
       <div align="center">
       <br /><br /><br /><br /><br /><br /><br />
-      <ins className="adsbygoogle"
+      {/* <ins className="adsbygoogle"
      style={{ display: 'block'}}
      data-ad-client="ca-pub-4856582423981759"
      data-ad-slot="4402011066"
      data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+     data-full-width-responsive="true"></ins> */}
       </div>
 
     </div>
