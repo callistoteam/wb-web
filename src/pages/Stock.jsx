@@ -17,7 +17,7 @@ const GraphPage = props => {
   };
   useEffect(() => {
     // (window.adsbygoogle = window.adsbygoogle || []).push({});
-    fetch(config.api + "/stocks/get")
+    fetch(config.api + "/money/stocks")
       .then(r => r.json())
       .then(data => {
         console.log(data);
