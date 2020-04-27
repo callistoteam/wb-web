@@ -1,9 +1,7 @@
 import React from "react";
 import {
-  StaticRouter,
   BrowserRouter as Router,
-  Switch,
-  Redirect
+  Switch
 } from "react-router-dom";
 
 import Navbar from "./components/NavBar";

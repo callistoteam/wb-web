@@ -13,8 +13,7 @@ const Shards = () => {
     fetch(config.api + "/shards")
       .then(r => r.json())
       .then(data => {
-        console.log(data);
-        setInfo(data);
+        setInfo(data.data);
 
         setLoading(false);
       });
