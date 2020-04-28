@@ -84,9 +84,9 @@ const Shards = () => {
               })}
             </>
           ) : (
-            (<>
+            <>
               <br/>
-              <h3 className="ui inverted header">{stockData.message}</h3>
+              <h3 className="ui inverted header">{Info.message}</h3>
               </>
           )}
         </div>
