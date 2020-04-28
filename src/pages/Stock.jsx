@@ -20,7 +20,6 @@ const GraphPage = props => {
     fetch(config.api + "/money/stocks")
       .then(r => r.json())
       .then(data => {
-        console.log(data);
         setStockData(data);
 
         setLoading(false);
@@ -57,13 +56,21 @@ const GraphPage = props => {
           }
         />
       )}
-
-      <Graph
-        data={{
-          labels: stockData.label,
-          datasets: stockData.stocks
-        }}
-      />
+     
+           {
+        stockData.code === 200 ? (
+          <Graph
+          data={{
+            labels: stockData.label,
+            datasets: stockData.stocks
+          }} 
+          />
+        ) : (<>
+        <br/>
+        <h3 className="ui inverted header">{stockData.message}</h3>
+        </>
+        )
+      }
       <br />
       <div align="center">
       <br /><br /><br /><br /><br /><br /><br />

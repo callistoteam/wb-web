@@ -6,16 +6,14 @@ import config from "../config";
 
 const Shards = () => {
   document.title = `원더봇 | 샤드 정보`;
-  const [Info, setInfo] = useState([]);
+  const [Info, setInfo] = useState({ code: 102, message: '로딩중...'});
   const [Loading, setLoading] = useState(true);
   useEffect(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
     fetch(config.api + "/shards")
       .then(r => r.json())
       .then(data => {
-        setInfo(data.data);
-
-        setLoading(false);
+        setInfo(data);
       });
   }, []);
 
@@ -34,9 +32,9 @@ const Shards = () => {
       </p>
       <div className="ui inverted center aligned stackable container">
         <div class="ui three stackable cards">
-          {Info.length !== 0 ? (
+          {Info.code === 200 ? (
             <>
-              {Info.map(el => {
+              {Info.data.map(el => {
                 return (
                   <a class="ui fluid card project">
                     <div class="content">
@@ -86,10 +84,13 @@ const Shards = () => {
               })}
             </>
           ) : (
-            <div>정보 가져오는 중...</div>
+            (<>
+              <br/>
+              <h3 className="ui inverted header">{stockData.message}</h3>
+              </>
           )}
         </div>
-      </div>{" "}
+      </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div align="center">
       <ins className="adsbygoogle"
